@@ -66,8 +66,8 @@ class _IntroPageState extends State<IntroPage> {
   }
 
   void getValue() async {
-    var prefs = await SharedPreferences.getInstance();
-    var getName = prefs.getString("name");
+    var prefss = await SharedPreferences.getInstance();
+    var getName = prefss.getString("name");
 
     setState(() {
       nameVal = getName != null ? getName : "No Value Saved";
